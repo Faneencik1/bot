@@ -2,8 +2,8 @@ import os
 from telegram import Update
 from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTypes
 
-BOT_TOKEN = os.getenv("7632234815:AAHyD40trAo8tOdVaFoHHNH2a_f64jHXRgw")
-CREATOR_CHAT_ID = int(os.getenv("5558426289"))
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+CREATOR_CHAT_ID = int(os.getenv("CREATOR_CHAT_ID"))
 
 async def forward_to_creator(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user = update.effective_user
