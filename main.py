@@ -3,8 +3,8 @@ from telegram.ext import ApplicationBuilder, MessageHandler, ContextTypes, filte
 import datetime
 import os
 
-BOT_TOKEN = os.getenv("BOT_TOKEN")
-CREATOR_CHAT_ID = int(os.getenv("CREATOR_CHAT_ID"))
+BOT_TOKEN = os.getenv("7632234815:AAHyD40trAo8tOdVaFoHHNH2a_f64jHXRgw")
+CREATOR_CHAT_ID = int(os.getenv("5558426289"))
 
 async def forward_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message:
